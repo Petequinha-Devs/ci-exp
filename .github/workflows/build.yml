@@ -20,6 +20,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Check default shell
+        run: |
+          echo -e "The default shel is: $0\n"
+
       - name: Build
         uses: snapcore/action-build@v1
         id: snapcraft
