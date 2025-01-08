@@ -40,14 +40,30 @@ body:
       placeholder: "123"
 
   - type: textarea
-    id: environment
+    id: snapversion
     attributes:
-      label: Environment
+      label: Snapd version
       description: >
-        We need to know a bit more about the context in which Docker failed.
-        Please paste here the output for the commands:
-        - `snap version`
+        Please paste here the output for the command: `snap version`
         - `cat /etc/os-release`
+    validations:
+      required: true
+
+  - type: textarea
+    id: osrelease
+    attributes:
+      label: OS version
+      description: >
+        Please paste here the output for the command: `cat /etc/os-release`
+    validations:
+      required: true
+
+  - type: textarea
+    id: arch
+    attributes:
+      label: Architecture
+      description: >
+        Please paste here the output for the command: `uname -orvm`
     validations:
       required: true
 
