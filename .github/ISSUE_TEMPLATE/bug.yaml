@@ -44,8 +44,8 @@ body:
     attributes:
       label: Snapd version
       description: >
-        Please paste here the output for the command: `snap version`
-        - `cat /etc/os-release`
+        Please paste here the output for the command: >
+          `snap version`
     validations:
       required: true
 
