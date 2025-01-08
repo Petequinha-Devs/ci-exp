@@ -45,7 +45,7 @@ body:
       label: Snapd version
       description: >
         Please paste here the output for the command:
-          `snap version`
+        `snap version`
     validations:
       required: true
 
@@ -54,7 +54,8 @@ body:
     attributes:
       label: OS version
       description: >
-        Please paste here the output for the command: `cat /etc/os-release`
+        Please paste here the output for the command:
+        `cat /etc/os-release`
     validations:
       required: true
 
@@ -63,7 +64,8 @@ body:
     attributes:
       label: Architecture
       description: >
-        Please paste here the output for the command: `uname -orvm`
+        Please paste here the output for the command:
+        `uname -orvm`
     validations:
       required: true
 
