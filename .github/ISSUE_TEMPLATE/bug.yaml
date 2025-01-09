@@ -34,7 +34,8 @@ body:
     attributes:
       label: Environment Information for Bug Reproduction
       description: >
-        Please, copy these commands, execute in your terminal and paste here the results.
+        Kindly copy the commands below, run them in your terminal,
+        and share the results here.
           ```bash
             snap list docker; echo;
             snap connections docker; echo;
