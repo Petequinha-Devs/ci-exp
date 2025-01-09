@@ -36,10 +36,10 @@ body:
       description: >
         Please, copy these commands, execute in your terminal and paste here the results
           ```
-            snap list docker
-            snap version
-            cat /etc/os-release
-            uname -orvm
+            snap list docker; echo;
+            snap version; echo;
+            cat /etc/os-release; echo;
+            uname -orvm; echo;
           ```
       render: shell
     validations:
