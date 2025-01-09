@@ -32,9 +32,9 @@ body:
   - type: textarea
     id: environment
     attributes:
-      label: environment
+      label: Environment Information for Bug Reproduction
       description: >
-        Please, copy these commands, execute in your terminal and paste here the results
+        Please, copy these commands, execute in your terminal and paste here the results.
           ```bash
             snap list docker; echo;
             snap version; echo;
