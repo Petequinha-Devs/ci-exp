@@ -39,7 +39,7 @@ body:
             snap list docker; echo;
             snap version; echo;
             cat /etc/os-release; echo;
-            uname -orvm; echo;
+            uname -orvm;
           ```
       render: shell
     validations:
