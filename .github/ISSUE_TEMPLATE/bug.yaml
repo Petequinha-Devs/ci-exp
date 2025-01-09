@@ -16,7 +16,7 @@ body:
       label: Bug Description
       description: >
         If applicable, add screenshots to help explain your
-        problem.
+        problem. Provide any additional information you may find useful here.
     validations:
       required: true
 
@@ -29,60 +29,68 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: revision
-    attributes:
-      label: Docker snap revision number
-      description: >
-        Applicable only if installed from the Store.
-        Which revision number of the Docker snap are you using?
-        You can check this by running `snap list docker` under the `Rev` column.
-      placeholder: "123"
-
   - type: textarea
-    id: snapversion
+    id: environment
     attributes:
-      label: Snapd version
+      label: environment
       description: >
-        Please paste here the output for the command:
-          `snap version`
+        Please, copy these commands, execute in your terminal and paste here the results
+          ```
+            snap list docker
+            snap version
+            cat /etc/os-release
+            uname -orvm
+          ```
+      render: shell
     validations:
       required: true
 
-  - type: textarea
-    id: osrelease
-    attributes:
-      label: OS version
-      description: >
-        Please paste here the output for the command:
-          * `cat /etc/os-release`
-          * `lsb_release -a`
-    validations:
-      required: true
-
-  - type: textarea
-    id: arch
-    attributes:
-      label: Architecture
-      description: >
-        Please paste here the output for the command:
-          * `uname -orvm`
-    validations:
-      required: true
+  # - type: input
+  #   id: revision
+  #   attributes:
+  #     label: Docker snap revision number
+  #     description: >
+  #       Applicable only if installed from the Store.
+  #       Which revision number of the Docker snap are you using?
+  #       You can check this by running `snap list docker` under the `Rev` column.
+  #     placeholder: "123"
+  #
+  # - type: textarea
+  #   id: snapversion
+  #   attributes:
+  #     label: Snapd version
+  #     description: >
+  #       Please paste here the output for the command:
+  #         `snap version`
+  #   validations:
+  #     required: true
+  #
+  # - type: textarea
+  #   id: osrelease
+  #   attributes:
+  #     label: OS version
+  #     description: >
+  #       Please paste here the output for the command:
+  #         * `cat /etc/os-release`
+  #         * `lsb_release -a`
+  #   validations:
+  #     required: true
+  #
+  # - type: textarea
+  #   id: arch
+  #   attributes:
+  #     label: Architecture
+  #     description: >
+  #       Please paste here the output for the command:
+  #         * `uname -orvm`
+  #   validations:
+  #     required: true
 
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: >
-        Please copy and paste any relevant log output. This will be
-        automatically formatted into code, so no need for backticks.
-      render: shell
+        Please copy and paste any relevant log output.
     validations:
       required: true
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional context
-      description: Provide any additional information you may find useful here.
