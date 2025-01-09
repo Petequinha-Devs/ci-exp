@@ -37,6 +37,7 @@ body:
         Please, copy these commands, execute in your terminal and paste here the results.
           ```bash
             snap list docker; echo;
+            snap connections docker; echo;
             snap version; echo;
             cat /etc/os-release; echo;
             uname -orvm;
