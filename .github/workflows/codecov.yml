@@ -3,7 +3,7 @@ name: Test Coverage
 on:
   pull_request:
     branches:
-      - main
+      - dev
 
 jobs:
   test-coverage:
