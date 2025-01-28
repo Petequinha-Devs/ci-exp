@@ -12,3 +12,6 @@ stage/
 
 # Unsquashed snap filesystem
 squashfs-root/
+
+# Output files
+.out
