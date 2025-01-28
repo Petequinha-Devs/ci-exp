@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checkout the main branch to calculate its coverage
-      - name: Checkout ${{ DEFAULT_BRANCH }} branch
+      - name: Checkout ${{ env.DEFAULT_BRANCH }} branch
         uses: actions/checkout@v4
         with:
           ref: $DEFAULT_BRANCH
@@ -23,10 +23,10 @@ jobs:
         with:
           go-version: '1.x'
 
-      - name: Install dependencies for ${{ DEFAULT_BRANCH }} branch
+      - name: Install dependencies for ${{ env.DEFAULT_BRANCH }} branch
         run: go mod tidy
 
-      - name: Run tests with coverage on ${{ DEFAULT_BRANCH }} branch
+      - name: Run tests with coverage on ${{ env.DEFAULT_BRANCH }} branch
         run: |
           go test ./... -coverprofile=coverage.out
 
