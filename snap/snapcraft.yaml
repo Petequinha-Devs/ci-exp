@@ -21,3 +21,5 @@ parts:
   env:
     plugin: dump
     source: .
+    stage-packages:
+      - libzpool5linux
