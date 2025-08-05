@@ -22,4 +22,4 @@ parts:
     plugin: dump
     source: .
     stage-packages:
-      - libzpool5linux
+      - zfsutils-linux
