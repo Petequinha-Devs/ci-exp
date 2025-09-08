@@ -7,6 +7,9 @@ grade: stable
 base: core24
 confinement: strict
 
+assumes:
+  - snapd2.68
+
 parts:
   env:
     plugin: dump
