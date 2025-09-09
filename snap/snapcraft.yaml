@@ -1,9 +1,9 @@
 name: test-2bc233c04d9b-locnnil
 version: 1.2
 summary: test snap publish stuff
-description: This is a snap to test snap store publishing features
-
-# GENERATE NOISE DIFF
+description: |
+  This is a snap to test snap store publishing features
+  It doesn't do nothing usefull. It just exists for me to test some snap store interactions.
 
 grade: stable
 base: core24
