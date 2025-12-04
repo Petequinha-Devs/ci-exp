@@ -1,0 +1,13 @@
+name: check-runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-pr-number:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check docker
+        run: |
+          which docker
+          snap list
