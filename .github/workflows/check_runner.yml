@@ -12,3 +12,4 @@ jobs:
           which docker
           snap list
           dpkg -S $(which docker)
+          apt-cache show $(dpkg -S $(which docker))
