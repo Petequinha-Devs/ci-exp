@@ -11,3 +11,4 @@ My snap `test-2bc233c04d9b-locnnil` is the target for the experiments, currently
 https://snapcraft.io/test-2bc233c04d9b-locnnil
 
 It doesn't do nothing usefull. It just exists for me to test some snap store interactions.
+
